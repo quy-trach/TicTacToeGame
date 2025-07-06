@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Một LinearLayout phụ để bao bọc nút back -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|top">
+
+        <!-- ImageButton Back ở góc trên cùng bên trái -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Quay lại chế độ chọn"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- LinearLayout chính chứa các phần tử khác -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Hiển thị danh sách các phòng chơi -->
+        <LinearLayout
+            android:id="@+id/roomsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/gameIdInput"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Nhập ID phòng"
+            android:inputType="number"
+            android:maxLength="6"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/background_dark"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/createGameButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Tạo phòng mới"
+            android:background="@drawable/border_radius_mode"
+            android:fontFamily="@font/mycustomfont"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/joinGameButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Vào phòng"
+            android:background="@drawable/border_radius_mode"
+            android:fontFamily="@font/mycustomfont"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>

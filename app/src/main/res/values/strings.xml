@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CaroApp</string>
+    <string name="delete_icon_desc">Delete</string>
+</resources>

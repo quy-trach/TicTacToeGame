@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/backgroundmain">
+
+
+
+    <!-- Nút Chơi 2 Người -->
+    <Button
+        android:id="@+id/playWithFriendButton"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_mode"
+        android:fontFamily="@font/mycustomfont"
+        android:padding="10dp"
+        android:text="hai người chơi"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <!-- Nút Chơi Với Máy -->
+    <Button
+        android:id="@+id/playWithAIButton"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_mode"
+        android:fontFamily="@font/mycustomfont"
+        android:padding="10dp"
+        android:text="chơi với máy"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <!-- Nút Chơi Trực Tuyến -->
+    <Button
+        android:id="@+id/playOnlineButton"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_mode"
+        android:fontFamily="@font/mycustomfont"
+        android:padding="10dp"
+        android:text="Chơi trực tuyến"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <!-- Nút Chơi Ngẫu Nhiên -->
+    <Button
+        android:id="@+id/playRandomButton"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_mode"
+        android:fontFamily="@font/mycustomfont"
+        android:padding="10dp"
+        android:text="Chơi ngẫu nhiên"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+</LinearLayout>
